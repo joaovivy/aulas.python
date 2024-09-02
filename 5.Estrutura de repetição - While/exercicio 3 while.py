@@ -7,10 +7,10 @@ contador = 3
 
 while True:
     login = input("Digite seu login: ")
-    senha = int("Digite sua senha: ")
+    senha = int(input("Digite sua senha: "))
 
     if login == "João" and senha == 1234:
-        print("Bme-vindo!")
+        print("Bem-vindo!")
         break
     else:
         print("Login ou senha inválidos.")

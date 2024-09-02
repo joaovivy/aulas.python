@@ -2,7 +2,7 @@ import os
 os.system ("cls || clear")
 
 soma = 0
- = 0
+media = 0
 
 for i in range(3):
     notas = float(input("Digite uma nota: "))
@@ -12,10 +12,10 @@ media = soma / 3
 
 print(f"Média: {media}")
 
-if  >= 7:
+if media >= 7:
     print(f"Aprovado.")
 else:
-    if  < 4:
+    if media < 4:
             print(f"Reprovado.")
     else:
             print("Recuperação.")
