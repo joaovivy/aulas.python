@@ -4,8 +4,9 @@ os.system("cls || clear")
 numero = 51
 
 while True:
-    if numero % 7 >= 0:
-        print(f"O primeiro número maior que 50 divisível por 7 é: {numero}")
+    numero = int(input("Digite um número: "))
+    if numero >= 50 and numero % 7 == 0:
+        print(f"{numero} é divisível por 7")
         break
-
-    numero +=1
+    else:
+        print(f"Esse número não é divisível por 7")

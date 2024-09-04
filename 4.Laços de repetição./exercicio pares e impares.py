@@ -12,5 +12,5 @@ for i in range(5):
     else:
         impares = impares + 1   
 
-print(f"Quantida de de Pares: {pares}")  
-print(f"Quantida de de ímpares: {impares}")
+print(f"Quantida de Pares: {pares}")  
+print(f"Quantida de ímpares: {impares}")

@@ -11,5 +11,6 @@ while True:
 
     if gasto_total > orcamento:
         print(f"O gasto é maior que o orçamento.")
+        break
     else:
         print(f"Total: {orcamento - gasto_total}")

@@ -1,15 +1,19 @@
 import os
 os.system("cls || clear")
 
-numero_inicial = float(input("Digite o número inicial: "))
-fator = float(input("Digite o fator: "))
+contador = 0
+numero = int(input("Digite um número: "))
+soma = 0
 
-produto = numero_inicial
-contagem_multiplicacoes = 0
-
-while produto <= 100:
-    produto *= fator
-    contagem_multiplicacoes +=1
-
-print(f"Produto final: {produto}")
-print(f"Número de multiplicações realizadas: {contagem_multiplicacoes}")
+while True:
+    fator = int(input("Digite o fator:"))
+    produto = fator * numero
+    soma += produto
+    if produto < 100:
+        print(f"Produto: {produto}")
+        print(f"Soma dos produtos: {soma}")
+        contador += 1
+        if soma >= 100:
+            print(f"O produto ultrapassou 100")
+            break
+    print(f"Número de ultiplicações realizadas: {contador}")
