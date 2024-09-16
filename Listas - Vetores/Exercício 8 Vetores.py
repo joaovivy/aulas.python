@@ -1,3 +1,10 @@
+"""
+Crie um algoritmo que aceite apenas 6 valores inteiros, positivos e pares, sem seguida,
+mostre na tela os valores lidos na ordem inversa.
+
+Caso seja informado um número diferente dos critérios apresentados acima,
+repita a pergunta para o usuário"""
+
 import os
 os.system("cls || clear")
 
