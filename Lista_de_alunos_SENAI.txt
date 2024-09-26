@@ -1,0 +1,6 @@
+João, 18
+Maria, 35
+João, 18
+Gabriel, 19
+Luma, 30
+Laura, 25
