@@ -48,4 +48,17 @@ print("\n=== Dados salvos com sucesso! ===")
 lista_de_clientes = []
 
 print("\n=== Acessando dados de um arquivo! ===")
-with open(nome_do_arquivo, "a")
+with open(nome_do_arquivo, "a") as arquivo_clientes:
+    for linha in arquivo_clientes:
+        nome, sobrenome, idade, peso, altura = linha.strip().split(",")
+        lista_de_clientes.append(Cliente(nome=nome, sobrenome=sobrenome, idade=int(idade), peso=float(peso), altura=float(altura)))
+
+arquivo_clientes.close()
+
+print("\n=== Exibindo dados dos alunos do arquivo ===")
+for aluno in lista_de_clientes:
+    print(f"Nome: {cliente.nome}")
+    print(f"Sobrenome: {cliente.sobrenome}")
+    print(f"Idade: {cliente.idade}")
+    print(f"Peso: {cliente.peso}")
+    print(f"Altura: {cliente.altura}")
